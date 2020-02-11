@@ -37,6 +37,8 @@ public class threefourteen {
 		int arr[] = new int[7];
 		int min = 100;
 		int sum = 0;
+		int even_number = 0;
+		
 		
 		for(int i = 0; i < 7 ; i++)
 		{
@@ -53,10 +55,21 @@ public class threefourteen {
 				}
 				sum = sum + arr[j];
 			}
+			else
+			{
+				even_number++;
+			}
 		}
 		
-		System.out.println(sum);
-		System.out.println(min);
+		if(even_number != 7)
+		{
+			System.out.println(sum);
+			System.out.println(min);
+		}
+		else
+		{
+			System.out.println(-1);
+		}
 
 		
 	}
