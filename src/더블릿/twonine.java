@@ -42,7 +42,7 @@ public class twonine {
 		
 		if(M >= 45)
 		{
-			System.out.println(H+""+(M-45));
+			System.out.println(H+" "+(M-45));
 		}
 		else if(M<45)
 		{
