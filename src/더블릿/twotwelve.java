@@ -41,11 +41,18 @@ public class twotwelve {
 		
 		if(withdraw%5==0)
 		{
-			System.out.println("%.2f",balance-0.5-withdraw);
+			if(withdraw>balance)
+			{
+				System.out.println(String.format("%.2f", balance));				
+			}
+			else
+			{
+				System.out.println(String.format("%.2f",balance-0.5-withdraw));				
+			}
 		}
 		else
 		{
-			System.out.println(balance);
+			System.out.println(String.format("%.2f", balance));
 		}
 
 	}
