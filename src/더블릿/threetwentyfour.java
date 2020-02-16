@@ -36,7 +36,7 @@ public class threetwentyfour {
 		
 		int num = sc.nextInt();
 		int sum = 0;
-		String result_num = String.format(% 5d, num);
+		String result_num = String.format("%5d", num);
 		
 		for(int i = 1;i < num;i++)
 		{

@@ -39,7 +39,7 @@ public class threetwentytwo {
 				System.out.print(i + " ");
 				num++;
 				sum = sum + i;
-				time = time * i;
+				time = time * i%10;
 			}
 			
 		}
@@ -47,6 +47,6 @@ public class threetwentytwo {
 		System.out.println();
 		System.out.println(num);
 		System.out.println(sum);
-		System.out.println(time%10);
+		System.out.println(time);
 	}
 }
