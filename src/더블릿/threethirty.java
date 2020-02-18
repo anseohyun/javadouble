@@ -31,7 +31,6 @@ public class threethirty {
 		int k = sc.nextInt();
 		String fraction = String.format("%."+k+"f", numerator/denominator);
 		
-		System.out.println(fraction);
+		System.out.println(Math.floor(fraction));
 	}
-
 }

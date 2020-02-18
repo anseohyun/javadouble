@@ -24,10 +24,54 @@
 
 package ´õºí¸´;
 
+import java.util.Scanner;
+
 public class twonineteen {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		
+		int num = sc.nextInt();
+		int right;
+		int left;
+		int repeat = 0;
+		
+		if(num <=  5)
+		{
+			right = 0;
+			left = num - 0;
+			
+			for(int i = 0 ; i <= num ; i++)
+			{
+				
+				if(right > left)
+				{
+					System.out.println(repeat);
+					break;
+				}
+				right++;
+				left--;
+				repeat++;
+			}
+		}
+		else
+		{
+			right = num - 5;
+			left = 5;
+			for(int i = 0 ; i <= num ; i++)
+			{
+				
+				if(right > left)
+				{
+					System.out.println(repeat);
+					break;
+				}
+				right++;
+				left--;
+				repeat++;
+			}
+		}	
 
 	}
 
