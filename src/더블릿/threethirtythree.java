@@ -21,7 +21,45 @@ package ´õºí¸´;
 public class threethirtythree {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		for(int N = 1; N <= 10000 ; N++)
+		{
+			if(N < 10)
+			{
+				if(N == (N*N)%10)
+				{
+					System.out.println(N);
+				}
+			}
+			else if(N > 10 && N < 100)
+			{
+				if(N == (N*N)%100)
+				{
+					System.out.println(N);
+				}
+			}
+			else if(N < 1000 && N < 100)
+			{
+				if(N == (N*N)%100)
+				{
+					System.out.println(N);
+				}
+			}
+			else if(N < 1000 && N < 10000)
+			{
+				if(N == (N*N)%1000)
+				{
+					System.out.println(N);
+				}
+			}
+			else
+			{
+				if(N == (N*N)%10000)
+				{
+					System.out.println(N);
+				}
+			}
+		}
 
 	}
 
