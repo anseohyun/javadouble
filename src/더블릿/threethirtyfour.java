@@ -32,11 +32,51 @@
 
 package ´õºí¸´;
 
+import java.util.Scanner;
+
 public class threethirtyfour {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
 
+		int num = sc.nextInt();
+		
+		
+		if(num < 10)
+		{
+			System.out.println(num);
+		}
+		else
+		{
+			for(int i = 1 ; i < 1000000000 ; )
+			{
+				if(i*10 > num)
+				{
+					System.out.println(num);
+					break;
+				}
+				else if(num < 10) 
+				{
+					break;
+				}
+				else
+				{						
+					if(num%(i*10) >= 5*((i*10)/10))
+					{
+						num = (num-(num%(i*10)))+(i*10);
+					}
+					else
+					{
+						num = num - (num%(i*10));
+					}
+				}
+
+				i = i*10;
+			}		
+			
+		}
+		
 	}
 
 }
