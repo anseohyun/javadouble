@@ -46,10 +46,32 @@
 
 package ´õºí¸´;
 
+import java.util.Scanner;
+
 public class threethirtyone {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+			
+			Scanner sc = new Scanner(System.in);
+
+			double start_temp = sc.nextDouble();
+			double temp;
+			
+
+			while(true)
+			{
+				temp = sc.nextDouble();
+				String temp_res = String.format("%.2f", temp - start_temp);
+				
+				if(temp == 999)
+				{
+					System.out.println("End of Output");
+					break;
+				}
+				
+				System.out.println(temp_res);
+				start_temp = temp;
+			}
 
 	}
 
